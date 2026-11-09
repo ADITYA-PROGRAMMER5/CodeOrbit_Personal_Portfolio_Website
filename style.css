@@ -141,3 +141,73 @@ textarea {
     transition: 0.3s;
 }
 
+.btn:hover {
+    background: transparent;
+    color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--secondary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.home-content {
+    flex: 1;
+}
+
+.welcome-text {
+    color: var(--secondary);
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.home-content h1 {
+    font-size: 43px;
+    margin-bottom: 10px;
+}
+
+.home-content h2 {
+    font-size: 25px;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.home-description {
+    color: var(--muted);
+    line-height: 1.8;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.home-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: var(--muted);
+    transition: 0.3s;
+}
+
