@@ -516,7 +516,7 @@ textarea {
     margin-bottom: 15px;
 }
 
-.contact-info>p {
+.contact-info > p {
     color: var(--muted);
     line-height: 1.8;
     margin-bottom: 30px;
@@ -557,3 +557,60 @@ textarea {
     font-size: 14px;
     resize: vertical;
 }
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary);
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
+
+#formMessage {
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.footer {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.footer a {
+    color: var(--secondary);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 1000px) {
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .home {
+        gap: 30px;
+    }
+
+}
+
