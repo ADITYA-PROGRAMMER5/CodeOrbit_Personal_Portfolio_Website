@@ -516,7 +516,7 @@ textarea {
     margin-bottom: 15px;
 }
 
-.contact-info > p {
+.contact-info>p {
     color: var(--muted);
     line-height: 1.8;
     margin-bottom: 30px;
@@ -557,4 +557,3 @@ textarea {
     font-size: 14px;
     resize: vertical;
 }
-
