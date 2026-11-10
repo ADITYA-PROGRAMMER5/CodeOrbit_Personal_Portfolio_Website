@@ -40,3 +40,28 @@ themeBtn.addEventListener("click", function () {
 
 });
 
+const progressBars = document.querySelectorAll(".progress-bar");
+
+const skillObserver = new IntersectionObserver(function (entries) {
+
+    entries.forEach(function (entry) {
+
+        if (entry.isIntersecting) {
+            const bar = entry.target;
+            const width = bar.getAttribute("data-width");
+
+            bar.style.width = width + "%";
+            skillObserver.unobserve(bar);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.5
+});
+
+progressBars.forEach(function (bar) {
+    skillObserver.observe(bar);
+});
+
