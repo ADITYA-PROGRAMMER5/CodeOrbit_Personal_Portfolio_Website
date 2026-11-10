@@ -65,3 +65,29 @@ progressBars.forEach(function (bar) {
     skillObserver.observe(bar);
 });
 
+const sections = document.querySelectorAll(".section");
+const revealObserver = new IntersectionObserver(function (entries) {
+
+    entries.forEach(function (entry) {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            revealObserver.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.1
+});
+
+sections.forEach(function (section) {
+
+    if (section.id !== "home") {
+        section.classList.add("reveal");
+    }
+
+    revealObserver.observe(section);
+
+});
