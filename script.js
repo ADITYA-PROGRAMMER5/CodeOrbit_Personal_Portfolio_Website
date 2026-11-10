@@ -144,3 +144,6 @@ contactForm.addEventListener("submit", function (event) {
     contactForm.reset();
 
 });
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
