@@ -91,3 +91,32 @@ sections.forEach(function (section) {
     revealObserver.observe(section);
 
 });
+
+const allSections = document.querySelectorAll("section[id]");
+const navObserver = new IntersectionObserver(function (entries) {
+
+    entries.forEach(function (entry) {
+
+        if (entry.isIntersecting) {
+            const currentId = entry.target.getAttribute("id");
+            navItems.forEach(function (link) {
+
+                link.classList.remove("active");
+
+                if (link.getAttribute("href") === "#" + currentId) {
+                    link.classList.add("active");
+                }
+
+            });
+
+        }
+
+    });
+
+}, {
+    threshold: 0.4
+});
+
+allSections.forEach(function (section) {
+    navObserver.observe(section);
+});
