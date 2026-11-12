@@ -17,4 +17,9 @@ A personal portfolio website built to showcase my skills, projects, and developm
    git clone https://github.com/ADITYA-PROGRAMMER5/CodeOrbit_Personal_Portfolio_Website.git
    ```
 
+2. Open the project folder:
+
+   ```bash
+   cd CodeOrbit_Personal_Portfolio_Website
+   ```
 
