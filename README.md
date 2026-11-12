@@ -9,4 +9,12 @@ A personal portfolio website built to showcase my skills, projects, and developm
 - CSS3 – Styling and responsive design
 - JavaScript – Interactive functionality
 
+## Setup Instructions
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ADITYA-PROGRAMMER5/CodeOrbit_Personal_Portfolio_Website.git
+   ```
+
 
