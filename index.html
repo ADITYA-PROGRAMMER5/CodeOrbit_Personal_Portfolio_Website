@@ -4,188 +4,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Aditya Jadhav | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
+    <meta name="description" content="Aditya Jadhav - Frontend Developer and BCA Student. Explore my skills, projects and web development journey.">
+    <title>ADI DEV PORTFOLIO | Aditya Jadhav</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
     <header class="header">
         <nav class="navbar">
 
             <a href="#home" class="logo">
-                ADI<span>DEV</span>
+                ADI<span>.</span>DEV
             </a>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <div class="nav-actions">
-                <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">
-                    ☀
-                </button>
-
-                <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">
-                    ☰
-                </button>
-            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
 
         </nav>
     </header>
 
+    <section class="hero section" id="home">
 
-    <section class="home section" id="home">
+        <div class="hero-content">
 
-        <div class="home-content">
-
-            <p class="welcome-text">WELCOME TO MY PORTFOLIO</p>
+            <span class="hero-label">
+                HELLO, I'M
+            </span>
 
             <h1>
-                Hi, I'm <span>Aditya Jadhav</span>
+                Aditya <span>Jadhav.</span>
             </h1>
 
-            <h2>Frontend Developer</h2>
+            <h2>
+                Frontend Developer
+            </h2>
 
-            <p class="home-description">
-                I build modern, responsive and user-friendly web applications.
-                I enjoy learning new technologies and turning ideas into
-                practical digital experiences.
+            <p>
+                I build modern, responsive and user-friendly web
+                experiences. Currently exploring backend development
+                and working towards becoming a full-stack developer.
             </p>
 
-            <div class="home-buttons">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    Explore Projects
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+
             </div>
 
-            <div class="social-links">
-                <a href="https://github.com/ADITYA-PROGRAMMER5" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <div class="hero-socials">
 
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/ADITYA-PROGRAMMER5"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub ↗
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn ↗
+                </a>
+
             </div>
 
         </div>
 
+        <div class="hero-decoration">
+            <div class="code-window">
 
-        <!-- Code Card Instead of Image -->
-        <div class="home-code">
-
-            <div class="code-header">
-                <div class="code-dots">
+                <div class="code-header">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
 
-                <p>developer.js</p>
+                <div class="code-content">
+                    <p><span>const</span> developer = {</p>
+                    <p class="code-indent">name: <span>"Aditya"</span>,</p>
+                    <p class="code-indent">role: <span>"Developer"</span>,</p>
+                    <p class="code-indent">learning: <span>"Full Stack"</span></p>
+                    <p>};</p>
+                    <br>
+                    <p><span>console</span>.log(developer);</p>
+                </div>
+
             </div>
-
-            <div class="code-content">
-                <p><span class="code-purple">const</span> developer = {</p>
-
-                <p class="indent">
-                    name: <span class="code-green">"Aditya Jadhav"</span>,
-                </p>
-
-                <p class="indent">
-                    role: <span class="code-green">"Frontend Developer"</span>,
-                </p>
-
-                <p class="indent">
-                    skills: [
-                </p>
-
-                <p class="indent-two">
-                    <span class="code-orange">"HTML"</span>,
-                    <span class="code-orange">"CSS"</span>,
-                </p>
-
-                <p class="indent-two">
-                    <span class="code-orange">"JavaScript"</span>,
-                    <span class="code-orange">"React"</span>
-                </p>
-
-                <p class="indent">],</p>
-
-                <p class="indent">
-                    learning: <span class="code-green">"Full Stack Development"</span>
-                </p>
-
-                <p>};</p>
-
-                <br>
-
-                <p>
-                    <span class="code-purple">console</span>.log(
-                    <span class="code-green">"Hello World!"</span>);
-                </p>
-            </div>
-
         </div>
 
     </section>
 
     <section class="about section" id="about">
 
-        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-wrapper">
 
-        <div class="about-container">
+            <div class="about-heading">
 
-            <div class="about-card">
-                <div class="about-initials">AJ</div>
-                <h3>Aditya Jadhav</h3>
-                <p>Frontend Developer</p>
+                <span class="about-label">
+                    01 — ABOUT ME
+                </span>
+
+                <h2>
+                    A developer with a
+                    <span>curious mind.</span>
+                </h2>
+
             </div>
 
-            <div class="about-text">
+            <div class="about-body">
 
-                <h3>Building Ideas Into Reality</h3>
+                <div class="about-intro">
 
-                <p>
-                    I am a BCA student passionate about web development
-                    and technology. I enjoy creating responsive and
-                    user-friendly websites using modern web technologies.
-                </p>
+                    <span class="intro-line"></span>
 
-                <p>
-                    Currently, I am improving my skills in React.js,
-                    Node.js and backend development while working on
-                    practical projects.
-                </p>
-
-                <div class="about-details">
-
-                    <div>
-                        <strong>Education:</strong>
-                        <span>Bachelor of Computer Applications</span>
-                    </div>
-
-                    <div>
-                        <strong>Focus:</strong>
-                        <span>Full Stack Development</span>
-                    </div>
-
-                    <div>
-                        <strong>Interest:</strong>
-                        <span>Web Development & Programming</span>
-                    </div>
+                    <p>
+                        I'm Aditya Jadhav, a BCA student interested in
+                        web development and building things for the web.
+                    </p>
 
                 </div>
 
-                <a href="#contact" class="btn">Let's Connect</a>
+                <div class="about-description">
+
+                    <p>
+                        I started learning web development with HTML,
+                        CSS and JavaScript. Over time, I became interested
+                        in React and how the backend of a web application works.
+                    </p>
+
+                    <p>
+                        I've worked on projects like a Campus Problem
+                        Reporter and other small applications. Each project
+                        gives me a chance to learn something new and improve
+                        my problem-solving skills.
+                    </p>
+
+                    <p>
+                        Currently, I'm exploring Node.js, Express.js and
+                        databases as I work towards becoming a full-stack
+                        developer.
+                    </p>
+
+                    <a href="#contact" class="about-link">
+                        Let's talk <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="about-bottom">
+
+                <div class="about-meta">
+                    <span>EDUCATION</span>
+                    <p>Bachelor of Computer Applications</p>
+                </div>
+
+                <div class="about-meta">
+                    <span>FOCUS</span>
+                    <p>Full Stack Development</p>
+                </div>
+
+                <div class="about-meta">
+                    <span>INTERESTS</span>
+                    <p>Web Development & Programming</p>
+                </div>
 
             </div>
 
@@ -195,16 +197,23 @@
 
     <section class="skills section" id="skills">
 
-        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="section-heading">
 
-        <p class="section-description">
-            Technologies and tools I use to build web applications.
-        </p>
+            <span class="section-label">02 — MY SKILLS</span>
+
+            <h2 class="section-title">
+                Technologies I <span>work with.</span>
+            </h2>
+
+            <p>
+                Tools and technologies I use while learning and building projects.
+            </p>
+
+        </div>
 
         <div class="skills-container">
 
-            <!-- Frontend -->
-            <div class="skill-card">
+            <div class="skill-group">
 
                 <h3>Frontend Development</h3>
 
@@ -213,86 +222,139 @@
                         <span>HTML</span>
                         <span>95%</span>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" data-width="95"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%;"></div>
                     </div>
                 </div>
 
                 <div class="skill-item">
                     <div class="skill-info">
                         <span>CSS</span>
-                        <span>85%</span>
+                        <span>80%</span>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" data-width="85"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
                     </div>
                 </div>
 
                 <div class="skill-item">
                     <div class="skill-info">
                         <span>JavaScript</span>
-                        <span>70%</span>
+                        <span>65%</span>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" data-width="70"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 65%;"></div>
                     </div>
                 </div>
 
                 <div class="skill-item">
                     <div class="skill-info">
                         <span>React.js</span>
-                        <span>65%</span>
+                        <span>70%</span>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" data-width="65"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%;"></div>
                     </div>
                 </div>
 
             </div>
 
 
-            <!-- Backend -->
-            <div class="skill-card">
+            <div class="skill-group">
 
                 <h3>Backend Development</h3>
 
                 <div class="skill-item">
                     <div class="skill-info">
                         <span>Node.js</span>
-                        <span>60%</span>
+                        <span>45%</span>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" data-width="60"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 45%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Express.js</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 40%;"></div>
                     </div>
                 </div>
 
                 <div class="skill-item">
                     <div class="skill-info">
                         <span>PHP</span>
-                        <span>70%</span>
+                        <span>55%</span>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" data-width="70"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 55%;"></div>
                     </div>
                 </div>
+
+            </div>
+
+
+            <div class="skill-group">
+
+                <h3>Database Management</h3>
 
                 <div class="skill-item">
                     <div class="skill-info">
                         <span>MongoDB</span>
-                        <span>55%</span>
+                        <span>40%</span>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" data-width="55"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 40%;"></div>
                     </div>
                 </div>
 
                 <div class="skill-item">
                     <div class="skill-info">
                         <span>PostgreSQL</span>
-                        <span>65%</span>
+                        <span>55%</span>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" data-width="65"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 55%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MySQL</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="skill-group">
+
+                <h3>Tools & Platforms</h3>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Git</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>GitHub</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
                     </div>
                 </div>
 
@@ -302,167 +364,176 @@
 
     </section>
 
-    <!-- Projects Section -->
     <section class="projects section" id="projects">
 
-        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="section-heading">
 
-        <p class="section-description">
-            Some projects I have built using different technologies.
-        </p>
+            <span class="section-label">03 — MY WORK</span>
+
+            <h2 class="section-title">
+                Selected <span>projects.</span>
+            </h2>
+
+            <p>
+                Some applications and experiments I've worked on.
+            </p>
+
+        </div>
 
         <div class="projects-container">
 
-            <!-- Project 1 -->
-            <div class="project-card">
+            <article class="project-item">
 
-                <div class="project-visual visual-one">
-                    <span>&lt; / &gt;</span>
-                    <p>WEB DEVELOPMENT</p>
-                </div>
+                <div class="project-number">01</div>
 
-                <div class="project-info">
+                <div class="project-content">
+
+                    <span class="project-category">
+                        FULL STACK DEVELOPMENT
+                    </span>
 
                     <h3>Campus Problem Reporter</h3>
 
                     <p>
-                        A web application that allows students to report
-                        campus problems and track their status.
+                        A web application that allows students to submit
+                        campus-related problems and administrators to
+                        manage and update report statuses.
                     </p>
 
-                    <div class="project-tags">
+                    <div class="project-tech">
                         <span>React</span>
                         <span>PHP</span>
                         <span>PostgreSQL</span>
                     </div>
 
-                    <a href="https://github.com/ADITYA-PROGRAMMER5/Campus-Problem-Reporter" target="_blank"
-                        rel="noopener noreferrer" class="project-link">
-                        View Project →
+                    <a href="https://github.com/ADITYA-PROGRAMMER5/Campus-Problem-Reporter"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Project ↗
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <!-- Project 2 -->
-            <div class="project-card">
+            <article class="project-item">
 
-                <div class="project-visual visual-two">
-                    <span>01 + 02</span>
-                    <p>JAVASCRIPT PROJECT</p>
-                </div>
+                <div class="project-number">02</div>
 
-                <div class="project-info">
+                <div class="project-content">
 
-                    <h3>Calculator Application</h3>
+                    <span class="project-category">
+                        FRONTEND DEVELOPMENT
+                    </span>
+
+                    <h3>ADI Dev Portfolio</h3>
 
                     <p>
-                        A simple and interactive calculator built using
-                        HTML, CSS and JavaScript.
+                        A personal portfolio website showcasing my skills,
+                        development journey and projects with a responsive
+                        user interface.
                     </p>
 
-                    <div class="project-tags">
+                    <div class="project-tech">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
 
-                    <a href="https://github.com/ADITYA-PROGRAMMER5" target="_blank" rel="noopener noreferrer"
-                        class="project-link">
-                        View Project →
+                    <a href="https://github.com/ADITYA-PROGRAMMER5"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View GitHub ↗
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
 
-            <!-- Project 3 -->
-            <div class="project-card">
+            <article class="project-item">
 
-                <div class="project-visual visual-three">
-                    <span>{ }</span>
-                    <p>FULL STACK DEVELOPMENT</p>
-                </div>
+                <div class="project-number">03</div>
 
-                <div class="project-info">
+                <div class="project-content">
 
-                    <h3>Portfolio Website</h3>
+                    <span class="project-category">
+                        BACKEND DEVELOPMENT
+                    </span>
+
+                    <h3>Chatbot Application</h3>
 
                     <p>
-                        A responsive personal portfolio website to showcase
-                        my skills, projects and development journey.
+                        A chatbot project built to explore backend
+                        development, API communication and database
+                        integration.
                     </p>
 
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
                     </div>
 
-                    <a href="#home" class="project-link">
-                        View Project →
+                    <a href="https://github.com/ADITYA-PROGRAMMER5"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View GitHub ↗
                     </a>
 
                 </div>
 
-            </div>
+            </article>
 
         </div>
 
     </section>
 
-
-    <!-- Contact Section -->
     <section class="contact section" id="contact">
 
-        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="contact-wrapper">
 
-        <p class="section-description">
-            Have a project or opportunity? Feel free to contact me.
-        </p>
+            <div class="section-heading">
 
-        <div class="contact-container">
+                <span class="section-label">04 — CONTACT</span>
 
-            <div class="contact-info">
-
-                <h3>Let's Work Together</h3>
+                <h2 class="section-title">
+                    Let's build something
+                    <span>together.</span>
+                </h2>
 
                 <p>
-                    I am always interested in learning, collaborating
-                    and working on new development projects.
+                    Have a project idea, opportunity or just want to connect?
+                    Feel free to get in touch.
                 </p>
-
-                <div class="contact-detail">
-                    <span>✉</span>
-                    <p>Email: adityajadhav5211@gmail.com</p>
-                </div>
-
-                <div class="contact-detail">
-                    <span>⌘</span>
-                    <p>GitHub: ADITYA-PROGRAMMER5</p>
-                </div>
 
             </div>
 
+            <div class="contact-details">
 
-            <form id="contactForm" class="contact-form">
+                <a href="mailto:your-email@example.com" class="contact-link">
+                    <span>Email</span>
+                    <span>your-email@example.com ↗</span>
+                </a>
 
-                <input type="text" id="name" placeholder="Your Name" required>
+                <a href="https://github.com/ADITYA-PROGRAMMER5"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-link">
+                    <span>GitHub</span>
+                    <span>ADITYA-PROGRAMMER5 ↗</span>
+                </a>
 
-                <input type="email" id="email" placeholder="Your Email" required>
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-link">
+                    <span>LinkedIn</span>
+                    <span>Connect with me ↗</span>
+                </a>
 
-                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-
-                <button type="submit" class="btn">
-                    Send Message
-                </button>
-
-                <p id="formMessage"></p>
-
-            </form>
+            </div>
 
         </div>
 
@@ -471,16 +542,17 @@
     <footer class="footer">
 
         <p>
-            © <span id="year"></span> Aditya Jadhav.
-            All Rights Reserved.
+            © <span id="currentYear"></span> Aditya Jadhav.
+            All rights reserved.
         </p>
 
-        <a href="#home">Back to Top ↑</a>
+        <a href="#home">
+            Back to top ↑
+        </a>
 
     </footer>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
